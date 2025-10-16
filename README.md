@@ -1,36 +1,152 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌍 Skylab Globetrotters
 
-## Getting Started
+Modern ve yenilikçi kapsül otel konsepti ile benzersiz seyahat deneyimleri sunan turizm platformu.
 
-First, run the development server:
+🌐 **Canlı Site**: [https://skylab-globetrotters.vercel.app/](https://skylab-globetrotters.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ✨ Özellikler
+
+- **Modern Kapsül Otel Deneyimi**: Teknoloji ve konforun buluştuğu yenilikçi konaklama çözümleri
+- **Dünya Turu Maceraları**: Özenle seçilmiş rotalar ve unutulmaz destinasyonlar
+- **Güvenli Seyahat**: 7/24 destek ve deneyimli ekip ile güvenli tur organizasyonları
+- **Responsive Tasarım**: Tüm cihazlarda mükemmel görünüm
+- **Modern UI/UX**: Tailwind CSS ile tasarlanmış şık ve kullanıcı dostu arayüz
+
+## 🚀 Teknoloji Yığını
+
+- **Framework**: Next.js 15.5.5 (App Router)
+- **UI Framework**: React 19.1.0
+- **Styling**: Tailwind CSS v4
+- **Icons**: Font Awesome
+- **Font**: Space Grotesk (Google Fonts)
+- **Language**: TypeScript
+- **Package Manager**: pnpm
+
+## 📁 Proje Yapısı
+
+```
+src/
+├── app/                    # Next.js App Router sayfaları
+│   ├── about/             # Hakkımız sayfası
+│   ├── gallery/           # Galeri sayfası
+│   ├── tours/             # Turlar sayfası
+│   ├── layout.tsx         # Ana layout
+│   └── page.tsx           # Ana sayfa
+├── components/            # React bileşenleri
+│   ├── Hero.tsx           # Ana hero bölümü
+│   ├── About.tsx          # Hakkımız bileşeni
+│   ├── PopularDestinations.tsx # Popüler destinasyonlar
+│   ├── PopularServices.tsx     # Popüler hizmetler
+│   ├── FeaturedFeatures.tsx    # Öne çıkan özellikler
+│   ├── Testimonials.tsx        # Müşteri yorumları
+│   ├── BlogSection.tsx         # Blog bölümü
+│   └── ...                 # Diğer bileşenler
+└── public/                # Statik dosyalar
+    └── images/            # Görseller
+        ├── destinations/  # Destinasyon görselleri
+        ├── capsule-hotels/ # Kapsül otel görselleri
+        └── ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Kurulum ve Çalıştırma
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Gereksinimler
+- Node.js 18+ 
+- pnpm (önerilen paket yöneticisi)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Kurulum
+```bash
+# Bağımlılıkları yükle
+pnpm install
 
-## Learn More
+# Geliştirme sunucusunu başlat
+pnpm dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresini açarak projeyi görüntüleyebilirsiniz.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Diğer Komutlar
+```bash
+# Production build oluştur
+pnpm build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Production sunucusunu başlat
+pnpm start
+```
 
-## Deploy on Vercel
+## 🌟 Sayfa Yapısı
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Ana Sayfa (`/`)
+- Hero slider ile ana tanıtım
+- Hakkımız bölümü
+- Popüler destinasyonlar
+- Popüler hizmetler
+- Öne çıkan özellikler
+- İstatistikler
+- Müşteri yorumları
+- Blog bölümü
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Hakkımız (`/about`)
+- Şirket bilgileri
+- Ekip tanıtımı
+- Müşteri yorumları
+
+### Turlar (`/tours`)
+- Tur arama kutusu
+- Tur kartları grid'i
+- Filtreleme seçenekleri
+
+### Galeri (`/gallery`)
+- Destinasyon ve kapsül otel görselleri
+
+## 🎨 Tasarım Özellikleri
+
+- **Renk Paleti**: Tailwind CSS'in varsayılan renk paleti
+- **Tipografi**: Space Grotesk font ailesi
+- **Responsive**: Mobil-first yaklaşım
+- **Animasyonlar**: Smooth geçişler ve hover efektleri
+- **Modern UI**: Minimalist ve şık tasarım
+
+## 📱 Responsive Tasarım
+
+Proje tüm cihaz boyutlarında optimize edilmiştir:
+- **Mobil**: 320px+
+- **Tablet**: 768px+
+- **Desktop**: 1024px+
+- **Large Desktop**: 1280px+
+
+## 🚀 Deployment
+
+### Vercel (Önerilen)
+```bash
+# Vercel CLI ile deploy
+npx vercel
+
+# Veya GitHub ile otomatik deploy
+# Repository'yi Vercel'e bağlayın
+```
+
+### Diğer Platformlar
+- Netlify
+- Railway
+- DigitalOcean App Platform
+
+## 🤝 Katkıda Bulunma
+
+1. Bu repository'yi fork edin
+2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
+3. Değişikliklerinizi commit edin (`git commit -m 'Add amazing feature'`)
+4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
+5. Pull Request oluşturun
+
+## 📄 Lisans
+
+Bu proje özel lisans altındadır. Tüm hakları saklıdır.
+
+## 📞 İletişim
+
+Proje hakkında sorularınız için lütfen iletişime geçin.
+
+---
+
+**Not**: Bu proje Next.js 15.5.5 ve React 19.1.0 ile geliştirilmiştir. Modern web teknolojilerinin en güncel özelliklerini kullanmaktadır.
