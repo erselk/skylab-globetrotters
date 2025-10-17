@@ -43,12 +43,6 @@ const features: Feature[] = [
 export default function About() {
   return (
     <section className="relative bg-white py-12 lg:py-20 overflow-hidden">
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.03]">
-        <h2 className="text-[12rem] lg:text-[20rem] font-bold text-black select-none">
-          About Company
-        </h2>
-      </div>
-
       <div className="container mx-auto px-6 lg:px-12 max-w-7xl relative z-10">
         <div className="max-w-3xl mb-16">
           <SubTitle text="About Us" />
